@@ -117,11 +117,6 @@ struct ConnectedRoad final : IntersectionViewData
     ConnectedRoad getMirroredCopy() const;
 };
 
-// small helper function to print the content of a connected road
-std::string toString(const IntersectionShapeData &shape);
-std::string toString(const IntersectionViewData &view);
-std::string toString(const ConnectedRoad &road);
-
 // Intersections are sorted roads: [0] being the UTurn road, then from sharp right to sharp left.
 // common operations shared amongst all intersection types
 template <typename Self> struct EnableShapeOps
